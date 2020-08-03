@@ -7,7 +7,6 @@ import {
   List,
   Divider,
   Box,
-  ListItemAvatar,
 } from "@material-ui/core"
 import Link from "./link"
 
