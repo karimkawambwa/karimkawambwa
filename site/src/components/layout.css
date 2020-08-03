@@ -1,0 +1,11 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #495867;
+  line-height: 1.5rem;
+  color: #f7f7ff;
+}
