@@ -1,7 +1,14 @@
 import React from "react"
 
 import rehypeReact from "rehype-react"
-import { Typography, ListItem, List, Divider, Box, ListItemAvatar } from "@material-ui/core"
+import {
+  Typography,
+  ListItem,
+  List,
+  Divider,
+  Box,
+  ListItemAvatar,
+} from "@material-ui/core"
 import Link from "./link"
 
 export const H1 = ({ children }) => (
@@ -25,7 +32,10 @@ export const H5 = ({ children }) => (
 )
 
 export const blockquote = ({ children }) => (
-  <Box component="blockquote" borderLeft="5px #f7f7ff solid" paddingLeft="10px">
+  <Box
+    component="blockquote"
+    style={{ borderLeft: "5px #f7f7ff solid", paddingLeft: "10px" }}
+  >
     {children}
   </Box>
 )

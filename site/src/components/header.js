@@ -3,23 +3,29 @@ import Link from "./link"
 import { Box, makeStyles } from "@material-ui/core"
 
 const useStyles = makeStyles({
+  header: {
+    marginBottom: "2rem",
+  },
   nav: {
-    display: "flex"
-  }
-});
+    display: "flex",
+  },
+  separator: {
+    margin: "0 10px",
+  },
+})
 
 const Header = () => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
-    <Box component="header" marginBottom="2rem">
+    <Box component="header" className={classes.header}>
       <Box component="nav" className={classes.nav}>
         <Link href="/">Karim Kawambwa ( Home )</Link>
-        <Box margin="0 10px">-</Box>
-        <Link href="/blog">Blog</Link> 
-        <Box margin="0 10px">-</Box>
-        <Link href="/projects">Projects</Link> 
-        <Box margin="0 10px">-</Box>
+        <Box className={classes.separator}>-</Box>
+        <Link href="/blog">Blog</Link>
+        <Box className={classes.separator}>-</Box>
+        <Link href="/projects">Projects</Link>
+        <Box className={classes.separator}>-</Box>
         <Link href="/about">About</Link>
       </Box>
     </Box>

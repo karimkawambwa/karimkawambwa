@@ -29,14 +29,14 @@ const Theme = createMuiTheme({
     body1: {
       fontSize: "1rem",
       color: "#f7f7ff",
-      margin: "1em 0"
+      margin: "1em 0",
     },
     body2: {
       fontSize: "1rem",
       color: "#f7f7ff",
     },
     caption: {
-      color: "rgba(255,255,255,0.5)"
+      color: "rgba(255,255,255,0.5)",
     },
     h1: {
       fontSize: "1rem",
@@ -103,7 +103,7 @@ const Layout = ({ children }) => {
   return (
     <MuiThemeProvider theme={Theme}>
       <Container maxWidth="md">
-        <Box margin="2rem 0">
+        <Box style={{ margin: "2rem 0" }}>
           <Header />
           <main>{children}</main>
           <Footer />
