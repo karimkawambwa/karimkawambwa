@@ -4,8 +4,10 @@
 I'm a graduate 🎓 [BSc Mechatronics Engineer](https://uwaterloo.ca/future-students/programs/mechatronics-engineering) from the [University of Waterloo Ontario](https://uwaterloo.ca/) and I am currently an Engineering Partner (EP) at [Commit](https://github.com/commitdev) working on a project using (for the first time) [golang](https://github.com/golang), [geth](https://github.com/ethereum/go-ethereum) and the [truffle suite](https://www.trufflesuite.com/). 
 
 I have interned at:
-- 👊 📱 [Xtreme Labs](https://betakit.com/torontos-xtreme-labs-acquired-by-pivotal-for-65-million-cash/)
-- 📱 Pivotal Labs, 🛍️ Shopify, 📺 [Digiflare](https://github.com/karimkawambwa/roku-framework)
+- 📱 [Xtreme Labs](https://betakit.com/torontos-xtreme-labs-acquired-by-pivotal-for-65-million-cash/)
+- 📱 Pivotal Labs
+- 🛍️ Shopify
+- 📺 [Digiflare](https://github.com/karimkawambwa/roku-framework)
 - 🐻 [Axiom Zen](https://www.axiomzen.co/news/article/need-help-just-knock)
 - 😎 Thalmic Labs
 
