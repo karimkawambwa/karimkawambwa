@@ -18,7 +18,15 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          'gatsby-remark-component'
+          'gatsby-remark-component',
+          {
+            resolve: `gatsby-remark-embed-snippet`,
+            options: {},
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {},
+          }
         ],
       }
     },
@@ -41,6 +49,15 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
+    "my-mui-theme"
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
