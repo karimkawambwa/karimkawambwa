@@ -1,5 +1,6 @@
 ---
 slug: "/blog/zero"
+langKey: "en"
 date: "2020-08-03"
 title: "Blog Zero"
 excerpt: "This is blog zero (name inspired by commit zero), a first of many thoughtful or simply working out loud literature to help reinforce my knowledge and for anyone googling."

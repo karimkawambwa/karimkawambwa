@@ -8,7 +8,7 @@ export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, htmlAst } = markdownRemark
   return (
-    <Layout>
+    <Layout lang={frontmatter.langKey}>
       <SEO title={frontmatter.title} />
       {renderAst(htmlAst)}
     </Layout>
@@ -22,6 +22,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug
+        langKey
         title
       }
     }

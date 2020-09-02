@@ -2,10 +2,10 @@ import React from "react"
 
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import { Typography } from "@material-ui/core"
-import Link from "../components/link"
+import Link from "../../components/link"
 
 const BlogPage = ({
   data: {
@@ -15,7 +15,7 @@ const BlogPage = ({
   <Layout>
     <SEO title="Blog" />
     <Typography variant="h1" style={{ marginBottom: "2rem" }}>
-      # Blog Posts
+      # Machapisho
     </Typography>
     {edges.map(({ node: { frontmatter } }) => (
       <Link key={frontmatter.slug} href={frontmatter.slug}>
@@ -35,7 +35,10 @@ export default BlogPage
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/(blog)/" } }
+      filter: {
+        fileAbsolutePath: { regex: "/(blog)/" }
+        frontmatter: { langKey: { eq: "sw" } }
+      }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {

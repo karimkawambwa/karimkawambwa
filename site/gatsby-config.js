@@ -18,7 +18,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          'gatsby-remark-component',
+          "gatsby-remark-component",
           {
             resolve: `gatsby-remark-embed-snippet`,
             options: {},
@@ -26,16 +26,16 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {},
-          }
+          },
         ],
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      }
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -57,7 +57,7 @@ module.exports = {
         },
       },
     },
-    "my-mui-theme"
+    "my-mui-theme",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

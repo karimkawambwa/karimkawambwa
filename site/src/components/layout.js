@@ -15,11 +15,11 @@ import { Container, Box } from "@material-ui/core"
 
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ lang, children }) => {
   return (
     <Container maxWidth="md">
       <Box style={{ margin: "2rem 0" }}>
-        <Header />
+        <Header lang={lang} />
         <main>{children}</main>
         <Footer />
       </Box>
@@ -28,7 +28,12 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
+  lang: PropTypes.string,
   children: PropTypes.node.isRequired,
+}
+
+Layout.defaultProps = {
+  lang: "",
 }
 
 export default Layout

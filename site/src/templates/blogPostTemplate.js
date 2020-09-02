@@ -9,7 +9,7 @@ export default function BlogPostTemplate({ data }) {
   const { markdownRemark } = data
   const { frontmatter, htmlAst } = markdownRemark
   return (
-    <Layout>
+    <Layout lang={frontmatter.langKey}>
       <SEO title={frontmatter.title} />
       <span>
         <Typography variant="h1"># {frontmatter.title}</Typography>
@@ -29,6 +29,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug
+        langKey
         title
         excerpt
       }

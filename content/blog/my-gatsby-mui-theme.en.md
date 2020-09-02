@@ -1,5 +1,6 @@
 ---
 slug: "/blog/my-gatsby-material-ui-theme"
+langKey: "en"
 date: "2020-08-29"
 title: "My Custom Material UI (MUI) on Gatsby"
 excerpt: "26 days later 😅 this is how I spent a few minutes of my day configuring MUI after I noticed my blog had Flash/Flicker of Unstyled Contenct (FOUC). I personally use material ui alot. I know there are many other styling methods using tailwind, style-components, style-jsx etc."

@@ -1,15 +1,16 @@
 ---
 slug: "/"
+langKey: "en"
 date: "2020-07-19"
-title: "Karim Kawambwa (Developer from Bagamoyo)"
+title: "Karim Kawambwa (Developer from Tanzania)"
 ---
 
 # Hello World 👋
 
 This is Karim Kawambwa
 
-## 🎓 [BSc Mechatronics Engineer](https://uwaterloo.ca/future-students/programs/mechatronics-engineering) graduate from the [University of Waterloo Ontario](https://uwaterloo.ca/)
-## Currently an Engineering Partner (EP) at [Commit](https://github.com/commitdev)
+- 🎓 [BSc Mechatronics Engineer](https://uwaterloo.ca/future-students/programs/mechatronics-engineering) graduate from the [University of Waterloo Ontario](https://uwaterloo.ca/)
+- Currently an Engineering Partner (EP) at [Commit](https://github.com/commitdev)
 
 ### Internships
 - 4 Months 🛍️ Shopify
