@@ -6,7 +6,7 @@ title: "My Custom Material UI (MUI) on Gatsby"
 excerpt: "26 days later 😅 this is how I spent a few minutes of my day configuring MUI after I noticed my blog had Flash/Flicker of Unstyled Contenct (FOUC). I personally use material ui alot. I know there are many other styling methods using tailwind, style-components, style-jsx etc."
 ---
 
-Since I had [@material-ui/core](https://material-ui.com/) already installed, I had to intall [gatsby-plugin-material-ui](https://www.gatsbyjs.com/plugins/gatsby-plugin-material-ui/), add the configure to my project's config **site/gatsby-config.js** and right off the bat you get the default theme and the theme provider will be wrapped on the root compoent resolving the [Flash/Flicker of Unstyled Content (FOUC)](https://en.wikipedia.org/wiki/Flash_of_unstyled_content). 
+Since I had [@material-ui/core](https://material-ui.com/) already installed, I had to install [gatsby-plugin-material-ui](https://www.gatsbyjs.com/plugins/gatsby-plugin-material-ui/), add the configure to my project's config **site/gatsby-config.js** and right off the bat you get the default theme and the theme provider will be wrapped on the root component resolving the [Flash/Flicker of Unstyled Content (FOUC)](https://en.wikipedia.org/wiki/Flash_of_unstyled_content). 
 
 > **NOTE:** You will have to re-run your site with the command **gatsby develop** whenever you make config changes.
 

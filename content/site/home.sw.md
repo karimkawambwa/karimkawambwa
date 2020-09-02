@@ -9,8 +9,8 @@ title: "Karim Kawambwa (Msanidi Progarmu toka Tanzania)"
 
 Karim Kawambwa hapa
 
-- 🎓 [Nina shahada ya kwanza Mechatronics Engineering](https://uwaterloo.ca/future-students/programs/mechatronics-engineering) kutoka [University ya Waterloo Ontario](https://uwaterloo.ca/)
-- Hivi sasa ni Engineering Partner (EP) katika kampuni ya [Commit](https://github.com/commitdev)
+- Nilipata Shahada ya Kwanza cha 🎓 [Uhandisi wa Machine na Umeme](https://uwaterloo.ca/future-students/programs/mechatronics-engineering) kutoka [Choo cha Waterloo Ontario](https://uwaterloo.ca/)
+- Hivi sasa mimi ni Engineering Partner (EP) katika kampuni iitwayo [Commit](https://github.com/commitdev)
 
 ### Internships
 - Miezi 4 🛍️ katika kapuni ya Shopify
