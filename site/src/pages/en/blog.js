@@ -2,10 +2,10 @@ import React from "react"
 
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import { Typography } from "@material-ui/core"
-import Link from "../components/link"
+import Link from "../../components/link"
 
 const BlogPage = ({
   data: {
