@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+const defaultLang = "en"
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const siteTemplate = require.resolve(`./src/templates/siteTemplate.js`)
@@ -18,6 +20,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               slug
+              langKey
             }
           }
         }
@@ -30,6 +33,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    if (defaultLang === node.frontmatter.langKey) {
+      console.log("/" + node.frontmatter.langKey + node.frontmatter.slug);
+      createPage({
+        path: "/" + node.frontmatter.langKey + node.frontmatter.slug,
+        component: siteTemplate,
+        context: {
+          // additional data can be passed via context
+          slug: node.frontmatter.slug,
+        },
+      })
+    }
     createPage({
       path: node.frontmatter.slug,
       component: siteTemplate,
@@ -53,6 +67,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               slug
+              langKey
             }
           }
         }
@@ -65,6 +80,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    if (defaultLang === node.frontmatter.langKey) {
+      createPage({
+        path: "/" + node.frontmatter.langKey + node.frontmatter.slug,
+        component: siteTemplate,
+        context: {
+          // additional data can be passed via context
+          slug: node.frontmatter.slug,
+        },
+      })
+    }
     createPage({
       path: node.frontmatter.slug,
       component: blogPostTemplate,
