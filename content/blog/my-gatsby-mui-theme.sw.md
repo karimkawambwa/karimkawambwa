@@ -10,7 +10,7 @@ Kwakua nilipakua na kusanidi [@material-ui/core](https://translate.google.com/tr
 
 > **NOTE:** Itabidi uianzishe tena tovuti yako kwa kutumia amri hii, **gatsby develop** pale utakapo fanya mabadiliko kwenye faili za usanidi (yani config files).
 
-Baada ya hapo, nikasogeza **HudumaYaMtido**, yani **ThemeProvider**, kutoka kwenya faili **site/src/components/layout.js** kwenda kwenye mkoba wa [programu-jalizi za gatsby](https://www.gatsbyjs.com/docs/creating-a-local-plugin/) **site/plugins/my-mui-theme**. Kufanya hivyo kutahakikisha kurasa zote zina Server Side Rendering (SSR) kwakutumia Application Protocol Interface (API) za Gatsby, [gatsby-browser.js](https://www.gatsbyjs.com/docs/browser-apis/#wrapRootElement) na [gatsby-ssr.js](https://www.gatsbyjs.com/docs/ssr-apis/#wrapRootElement) [(kwa ufahamu zaidi 😉)](https://translate.google.com/translate?hl=en&sl=en&tl=sw&u=https%3A%2F%2Fmaterial-ui.com%2Fstyles%2Fadvanced%2F%23server-side-rendering)).
+Baada ya hapo, nikasogeza **HudumaYaMtido**, yani **ThemeProvider**, kutoka kwenya faili **site/src/components/layout.js** kwenda kwenye mkoba wa [programu-jalizi za gatsby](https://www.gatsbyjs.com/docs/creating-a-local-plugin/) **site/plugins/my-mui-theme**. Kufanya hivyo kutahakikisha kurasa zote zina Server Side Rendering (SSR) kwakutumia Application Protocol Interface (API) za Gatsby, [gatsby-browser.js](https://www.gatsbyjs.com/docs/browser-apis/#wrapRootElement) na [gatsby-ssr.js](https://www.gatsbyjs.com/docs/ssr-apis/#wrapRootElement) [(kwa ufahamu zaidi)](https://translate.google.com/translate?hl=en&sl=en&tl=sw&u=https%3A%2F%2Fmaterial-ui.com%2Fstyles%2Fadvanced%2F%23server-side-rendering).
 
 ## Muudo wa code, mkoba na faili nikama ifuatavyo:
 
