@@ -6,8 +6,7 @@ title: "Data Stats: Finding Records with Categories"
 excerpt: "Recently, I had a request to create a view that displayed website categories and how many websites fall under that category."
 ---
 
-Okay, the task seemed simple enough and looking at the postgres data, the data table has the relevant columns `url` and `categories`. However what makes it tricky is that the column `categories` is a comma separated list of categories for that website. A simple `SELECT`, `COUNT` and `GROUP BY` query would not work. I would need to:
-
+Okay, the task seemed simple enough and looking at the postgres data, the table has the relevant columns `url` and `categories`. However, what makes it tricky is that the column `categories`, which is a comma separated list of categories for that website. A simple `SELECT`, `COUNT` and `GROUP BY` query would not work. I would need to:
 - Create a list of the catgories
 - Count the websites for each distinct category
 
@@ -31,7 +30,7 @@ WHERE
 ;
 ```
 
-First all `categories` are joined/aggregated using the postgres string aggregation function `STRING_AGG(..)`. This results in an aggregated comma separated link where I `STRING_TO_ARRAY(...)` converts it into a json object. The last step, `UNNSET(...)` is something I have not used before. What this does is expand the array into rows. The rows are **not** DISTINCT, they have duplicate values since categerioes can exist in multiple website rows.
+First, all `categories` are joined/aggregated using the postgres string aggregation function `STRING_AGG(..)`. This results in an aggregated comma separated link where I `STRING_TO_ARRAY(...)` converts it into a json object. The last step, `UNNSET(...)` is something I have not used before. What this does is expand the array into rows. The rows are **not** DISTINCT, they have duplicate values since categerioes can exist in multiple website rows.
 
 ### Count the websites for each distinct category
 
