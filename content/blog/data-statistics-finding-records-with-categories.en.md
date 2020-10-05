@@ -16,7 +16,7 @@ The categories list is create with the folowing query:
 
 ```sql
 SELECT
-    UNNSET(
+    UNNEST(
         STRING_TO_ARRAY(
             STRING_AGG(categories, ','),
             ','
@@ -30,7 +30,7 @@ WHERE
 ;
 ```
 
-First, all `categories` are joined/aggregated using the postgres string aggregation function `STRING_AGG(..)`. This results in an aggregated comma separated link where I `STRING_TO_ARRAY(...)` converts it into a json object. The last step, `UNNSET(...)` is something I have not used before. What this does is expand the array into rows. The rows are **not** DISTINCT, they have duplicate values since categerioes can exist in multiple website rows.
+First, all `categories` are joined/aggregated using the postgres string aggregation function `STRING_AGG(..)`. This results in an aggregated comma separated link where I `STRING_TO_ARRAY(...)` converts it into a json object. The last step, `UNNEST(...)` is something I have not used before. What this does is expand the array into rows. The rows are **not** DISTINCT, they have duplicate values since categerioes can exist in multiple website rows.
 
 ### Count the websites for each distinct category
 
@@ -53,7 +53,7 @@ SELECT
     COUNT(u) AS websites_count
 FROM (
     SELECT
-        UNNSET(
+        UNNEST(
             STRING_TO_ARRAY(
                 STRING_AGG(categories, ','),
                 ','
