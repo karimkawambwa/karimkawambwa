@@ -11,7 +11,10 @@ I have interned at:
 - 🐻 [Axiom Zen](https://www.axiomzen.co/news/article/need-help-just-knock)
 - 😎 Thalmic Labs
 
-I previously worked full time (partially remote) at 🌍 [Code For Africa](https://github.com/CodeForAfrica) back home in Tanzania.
+I worked full time:
+- 🌍 [Code For Africa](https://github.com/CodeForAfrica) in Tanzania
+- [Commit Dev Community](https://commit.dev/)  [present]
+- [Atlas One](https://atlasone.ca/) [present]
 
 ---
 
