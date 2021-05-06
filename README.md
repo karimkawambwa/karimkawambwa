@@ -18,9 +18,7 @@ I worked full time:
 
 ---
 
-I hope to use my Mechatronics Knowledge with the software skills and be a maker!
-
-> If I can learn it, I can code it. 🙃
+I hope to be a maker!
 
 ---
 
